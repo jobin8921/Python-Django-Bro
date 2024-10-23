@@ -1,0 +1,10 @@
+{% for obj in movies %}
+<h1>Title : {{obj.title | upper}}  </h1>
+<p>Summary : {{obj.summary | length}}</p>
+<h4>Year : {{obj.year}}</h4>
+{% if obj.sucess %}
+<p>movie is sucess</p>
+{% else %}
+<p>movie is failer</p>
+{% endif %}
+{% endfor %}
